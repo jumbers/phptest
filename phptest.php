@@ -10,7 +10,7 @@
 	exec($cmdline, $arrOutput, $errorOutput);
 	if ($errorOutput != 0)
 	{
-		die;
+		die("Error: $errorOutput");
 	}
 	echo $arrOutput;
 	?>
