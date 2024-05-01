@@ -4,7 +4,7 @@ if (!$viewdata) {exit(); } //don't actually bother to load the log if the user d
 if ($log == "") {exit ("Please specify a type of log"); }
 if ($search == "") {exit ("Please specify a search string"); }
 
-$cmdline = "sudo -u wizbot whoami";
+$cmdline = "whoami";
 
 exec($cmdline, $arrOutput, $errorOutput);
 #echo join("<br>", $arrOutput);
