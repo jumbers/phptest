@@ -1,5 +1,5 @@
 <?php
-
+echo 'h';
 if (!$viewdata) {exit(); } //don't actually bother to load the log if the user didn't yet make a selection
 if ($log == "") {exit ("Please specify a type of log"); }
 if ($search == "") {exit ("Please specify a search string"); }
