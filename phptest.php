@@ -5,11 +5,13 @@
  <body>
   <?php 
 	echo 'Hello World'; 
-	$cmdline = "sudo -u wizbot /bin/bash ;
+	$cmdline = "sudo -u wizbot /bin/bash whoami";
 	
 	exec($cmdline, $arrOutput, $errorOutput);
 	if ($errorOutput != 0)
-		die("Error: $errorOutput<br>");
+	{
+		die;
+	}
 	echo $arrOutput;
 	?>
  </body>
