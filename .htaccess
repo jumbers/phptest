@@ -1,0 +1,5 @@
+php_flag engine on
+
+# In php8, php dropped the version number.
+
+php_flag engine on
