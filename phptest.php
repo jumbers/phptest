@@ -4,7 +4,9 @@
  </head>
  <body>
 	<?php
-	$cmdline = "sudo -u wizbot /bin/bash whoami";
+	$log == "1";
+	$search == "Money+Trades";
+	$cmdline = "sudo -u wizbot /bin/bash /home/wizbot/searchspeciallog.sh $log $search";
 	
 	exec($cmdline, $arrOutput, $errorOutput);
 
